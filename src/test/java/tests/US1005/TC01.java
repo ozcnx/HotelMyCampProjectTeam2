@@ -1,5 +1,7 @@
 package tests.US1005;
 
 public class TC01 {
-    //""""Deneme"
+    //Deneme Test Git
+
+// Aynı satıra yazdıgınız için conflict oldu ama düzelttim. İyi Geceler.
 }
