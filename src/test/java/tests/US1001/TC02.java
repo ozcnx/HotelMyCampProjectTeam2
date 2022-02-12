@@ -2,5 +2,5 @@ package tests.US1001;
 
 public class TC02 {
 
-    //selam bu ikinci push
+    //selam bu ucuncu push
 }
