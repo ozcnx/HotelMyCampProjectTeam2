@@ -6,12 +6,5 @@ import utilities.Driver;
 
 public class TC03 {
 
-    @Test
-    public void test01(){
-
-        Driver.getDriver().get("https://www.amazon.com");
-
-
-    }
 
 }

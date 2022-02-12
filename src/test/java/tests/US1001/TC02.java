@@ -11,8 +11,5 @@ public class TC02 {
         Driver.getDriver().get("https://www.hotelmycamp.com");
 
     }
-
-
-
-
+  
 }
