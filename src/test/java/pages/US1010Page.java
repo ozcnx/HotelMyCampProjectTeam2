@@ -7,6 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.ConfigReader;
 import utilities.Driver;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class US1010Page {
 
     public US1010Page(){
@@ -47,6 +50,29 @@ public class US1010Page {
     }
 
 
+
+    @FindBy(xpath = "(//a[text()='Rooms'])[1]")
+    public WebElement roomsButtonElementi;
+
+   @FindBy (xpath ="//h1[text()='Rooms']")
+   public WebElement roomsSayfasibaslikyazisi;
+
+    @FindBy (id = "checkin_date")
+    public WebElement rezervasyonGirisTarihiTextBox;
+
+    @FindBy (id = "checkout_date")
+    public WebElement rezervasyonCikisTarihiTextBox;
+
+    @FindBy (id = "IDRoomType")
+    public WebElement selectRoomTypeTextBox;
+    @FindBy (id="AdultCount")
+    public WebElement selectAdultCountTextBox;
+
+    @FindBy (xpath="//input[@value='Search']")
+    public WebElement searchButonuElementi;
+
+    @FindBy (xpath="//div[@class='col-sm col-md-6 col-lg-4 ftco-animate fadeInUp ftco-animated']")
+    public List<WebElement> aramaSonrasiRoomsListe;
 
 
 
