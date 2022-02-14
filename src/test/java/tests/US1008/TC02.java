@@ -15,7 +15,7 @@ public class TC02 {
         us1008.girisYap();
         us1008.hotelManegementLinki.click();
 
-
+//deneme
 
     }
 }
