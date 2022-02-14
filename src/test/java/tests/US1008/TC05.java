@@ -1,9 +1,8 @@
 package tests.US1008;
 
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
-import pages.US1008;
+import pages.RoomReservations;
 
 public class TC05 {
     //Kullanıcılar Anasayfaya sorunsuz erişebilmelidir
@@ -18,27 +17,27 @@ public class TC05 {
 
     @Test
     public void addRoomReservation() throws InterruptedException {
-        US1008 us1008 = new US1008();
-        us1008.girisYap();
-        us1008.hotelManegementLinki.click();
-        us1008.RoomReservationLinki.click();
-       us1008.AddRoomReservationLinki.click();
+        RoomReservations roomReservations=new RoomReservations();
+        roomReservations.girisYap();
+        roomReservations.hotelManegementLinki.click();
+        roomReservations.RoomReservationLinki.click();
+        roomReservations.AddRoomReservationLinki.click();
 
 
-        us1008.manager.click();
-        us1008.oda.click();
-        us1008.Price.sendKeys("500"+ Keys.TAB);
-        us1008.dateStart.sendKeys("02-15-2022"+Keys.TAB);
-        Thread.sleep(2000);
-        us1008.dateEnd.sendKeys("02-20-2022"+Keys.TAB);
-        us1008.adultAmount.sendKeys("2"+Keys.TAB);
-        us1008.childrenAmount.sendKeys("2"+Keys.TAB);
-        us1008.contactNameSurname.sendKeys("Yılmaz Tarhan"+Keys.TAB);
-        us1008.contactPhone.sendKeys("5552502525"+Keys.TAB);
-        us1008.contactEmail.sendKeys("yt@gmail.com"+Keys.TAB);
-        us1008.notes.sendKeys("Örnek");
-        us1008.approved.click();
-        us1008.saveButonu.click();
+        roomReservations.manager.click();
+        roomReservations.oda.click();
+        roomReservations.Price.sendKeys("500"+ Keys.TAB);
+        roomReservations.dateStart.sendKeys("02-15-2022"+Keys.TAB);
+        Thread.sleep(1000);
+        roomReservations.dateEnd.sendKeys("02-20-2022"+Keys.TAB);
+        roomReservations.adultAmount.sendKeys("2"+Keys.TAB);
+        roomReservations.childrenAmount.sendKeys("2"+Keys.TAB);
+        roomReservations.contactNameSurname.sendKeys("Yılmaz Tarhan"+Keys.TAB);
+        roomReservations.contactPhone.sendKeys("5552502525"+Keys.TAB);
+        roomReservations.contactEmail.sendKeys("yt@gmail.com"+Keys.TAB);
+        roomReservations.notes.sendKeys("Örnek");
+        roomReservations.approved.click();
+        roomReservations.saveButonu.click();
 
 
 

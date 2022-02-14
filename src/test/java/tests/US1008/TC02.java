@@ -1,7 +1,7 @@
 package tests.US1008;
 
 import org.testng.annotations.Test;
-import pages.US1008;
+import pages.RoomReservations;
 
 public class TC02 {
     //"Kullanıcılar Anasayfaya sorunsuz erişebilmelidir.
@@ -11,9 +11,9 @@ public class TC02 {
 
     @Test
     public void HotelManagement(){
-        US1008 us1008=new US1008();
-        us1008.girisYap();
-        us1008.hotelManegementLinki.click();
+        RoomReservations roomReservations=new RoomReservations();
+        roomReservations.girisYap();
+        roomReservations.hotelManegementLinki.click();
 
 //deneme
 
