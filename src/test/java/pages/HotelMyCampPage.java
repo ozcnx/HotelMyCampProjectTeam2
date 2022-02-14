@@ -6,6 +6,9 @@ import utilities.Driver;
 
 public class HotelMyCampPage {
 
+    // Ortak Page. Kullanılabilir methodlar koyulacaktır.
+
+
     public HotelMyCampPage() {
         PageFactory.initElements(Driver.getDriver() , this);
     }
