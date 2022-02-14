@@ -41,9 +41,10 @@ public class TC05 {
         roomReservations.notes.sendKeys("Örnek");
         roomReservations.approved.click();
         roomReservations.saveButonu.click();
+        roomReservations.bekle(4);
 
-       Assert.assertTrue(roomReservations.basariliKayitElementi.isEnabled());
-       Driver.closeDriver();
+       Assert.assertTrue(roomReservations.basariliKayitElementi.isDisplayed());
+
 
 
        // roomReservations.okButonu.click();
