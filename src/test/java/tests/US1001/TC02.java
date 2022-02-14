@@ -5,9 +5,6 @@ import utilities.Driver;
 
 public class TC02 {
 
-<<<<<<< HEAD
-
-}
     @Test
     public void test1(){
 
@@ -15,7 +12,4 @@ public class TC02 {
 
     }
   
-=======
-    //selam bu ucuncu push
->>>>>>> origin/yilmaz
 }
