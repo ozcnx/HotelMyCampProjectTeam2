@@ -16,7 +16,7 @@ public class TC02 {
         roomReservations.girisYap();
         roomReservations.hotelManegementLinki.click();
         Driver.closeDriver();
-//deneme
+
 
     }
 }
