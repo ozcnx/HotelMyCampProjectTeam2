@@ -10,7 +10,6 @@ public class HotelMyCampPage {
         PageFactory.initElements(Driver.getDriver() , this);
     }
 
-
     public void bekle(int saniye) {
         try {
             Thread.sleep(saniye * 1000);
