@@ -1,8 +1,11 @@
 package tests.US1008;
 
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.RoomReservations;
+import utilities.Driver;
 
 public class TC05 {
     //Kullanıcılar Anasayfaya sorunsuz erişebilmelidir
@@ -28,7 +31,7 @@ public class TC05 {
         roomReservations.oda.click();
         roomReservations.Price.sendKeys("500"+ Keys.TAB);
         roomReservations.dateStart.sendKeys("02-15-2022"+Keys.TAB);
-        Thread.sleep(1000);
+        roomReservations.bekle(1);
         roomReservations.dateEnd.sendKeys("02-20-2022"+Keys.TAB);
         roomReservations.adultAmount.sendKeys("2"+Keys.TAB);
         roomReservations.childrenAmount.sendKeys("2"+Keys.TAB);
@@ -38,6 +41,27 @@ public class TC05 {
         roomReservations.notes.sendKeys("Örnek");
         roomReservations.approved.click();
         roomReservations.saveButonu.click();
+
+       Assert.assertTrue(roomReservations.basariliKayitElementi.isEnabled());
+       Driver.closeDriver();
+
+
+       // roomReservations.okButonu.click();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

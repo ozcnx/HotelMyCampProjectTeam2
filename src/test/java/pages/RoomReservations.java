@@ -24,11 +24,10 @@ public class RoomReservations {
     @FindBy(xpath = "//input[@id='btnSubmit']")
     public WebElement loginButonu;
 
-    @FindBy(xpath = "//div[@class='validation-summary-errors']")
-    public WebElement girisYapilamadiYaziElementi;
 
-    @FindBy(xpath="//span[text()='ListOfUsers']")
-    public WebElement basariliGirisYaziElementi;
+
+    @FindBy(xpath="//div[text()='RoomReservation was inserted successfully']")
+    public WebElement basariliKayitElementi;
 
     @FindBy(xpath = "//span[text()='System Management']")
     public WebElement SystemManagementLinki;
@@ -95,6 +94,12 @@ public class RoomReservations {
 
     @FindBy(xpath = "//button[@id='btnSubmit']")
     public WebElement saveButonu;
+
+    @FindBy(xpath = "//button[@data-bb-handler='ok']")
+    public WebElement okButonu;
+
+    @FindBy(xpath = "//a[text()='List Of Hotelroomreservatıons']")
+    public WebElement listofHotelroomreservations;
 
 
 

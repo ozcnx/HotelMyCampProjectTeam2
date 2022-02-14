@@ -2,6 +2,7 @@ package tests.US1008;
 
 import org.testng.annotations.Test;
 import pages.RoomReservations;
+import utilities.Driver;
 
 public class TC02 {
     //"Kullanıcılar Anasayfaya sorunsuz erişebilmelidir.
@@ -14,7 +15,7 @@ public class TC02 {
         RoomReservations roomReservations=new RoomReservations();
         roomReservations.girisYap();
         roomReservations.hotelManegementLinki.click();
-
+        Driver.closeDriver();
 //deneme
 
     }

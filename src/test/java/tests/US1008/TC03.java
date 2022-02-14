@@ -1,7 +1,9 @@
 package tests.US1008;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.RoomReservations;
+import utilities.Driver;
 
 public class TC03 {
     //Kullanıcılar Anasayfaya sorunsuz erişebilmelidir.
@@ -16,6 +18,8 @@ public class TC03 {
         roomReservations.girisYap();
         roomReservations.hotelManegementLinki.click();
         roomReservations.RoomReservationLinki.click();
+        Driver.closeDriver();
+
 
     }
 }
