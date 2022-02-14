@@ -115,7 +115,6 @@ public class US1008 {
         passwordBox.sendKeys(ConfigReader.getProperty("HMCValidPassword"));
         loginButonu.click();
 
-
     }
 
 
