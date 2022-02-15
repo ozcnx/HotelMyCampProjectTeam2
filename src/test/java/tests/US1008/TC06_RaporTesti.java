@@ -49,7 +49,7 @@ public class TC06_RaporTesti extends TestBaseRapor {
         Assert.assertTrue(roomReservations.basariliKayitElementi.isDisplayed());
        extentTest.pass("Rezervasyon bilgilerinin kayıt edildigi test edildi");
 
-
+    //
 
 
     }
