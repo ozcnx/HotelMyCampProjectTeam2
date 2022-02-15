@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="rapor">
+    <test name="Html rapor">
+    <classes>
+        <class name="tests.US1008.TC06_RaporTesti"></class>
+    </classes>
+            
+    </test>
+</suite>

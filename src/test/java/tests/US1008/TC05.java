@@ -19,7 +19,7 @@ public class TC05 {
     //Yönetici  Room Reservationu yapabildiğini doğrulamalıdır
 
     @Test
-    public void addRoomReservation() throws InterruptedException {
+    public void addRoomReservations()  {
         RoomReservations roomReservations=new RoomReservations();
         roomReservations.girisYap();
         roomReservations.hotelManegementLinki.click();
@@ -30,9 +30,10 @@ public class TC05 {
         roomReservations.manager.click();
         roomReservations.oda.click();
         roomReservations.Price.sendKeys("500"+ Keys.TAB);
-        roomReservations.dateStart.sendKeys("02-15-2022"+Keys.TAB);
-        roomReservations.bekle(1);
-        roomReservations.dateEnd.sendKeys("02-20-2022"+Keys.TAB);
+        roomReservations.bekle(2);
+        roomReservations.dateStart.sendKeys("02-18-2022"+Keys.TAB);
+        roomReservations.bekle(2);
+        roomReservations.dateEnd.sendKeys("02-25-2022"+Keys.TAB);
         roomReservations.adultAmount.sendKeys("2"+Keys.TAB);
         roomReservations.childrenAmount.sendKeys("2"+Keys.TAB);
         roomReservations.contactNameSurname.sendKeys("Yılmaz Tarhan"+Keys.TAB);
@@ -41,33 +42,10 @@ public class TC05 {
         roomReservations.notes.sendKeys("Örnek");
         roomReservations.approved.click();
         roomReservations.saveButonu.click();
-        roomReservations.bekle(4);
+        roomReservations.bekle(3);
+
 
        Assert.assertTrue(roomReservations.basariliKayitElementi.isDisplayed());
-
-
-
-       // roomReservations.okButonu.click();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
